@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<waet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test-intra-same-00schema.xsd">
+  <setup interface="MUSHRA" projectReturn="save.php" returnURL="" randomiseOrder="true" poolSize="20" loudness="-26" crossFade="0" randomiseAxisOrder="false" preSilence="0" postSilence="0" playOne="false" minNumberPlays="1">
+    <exitText>
+      Your results have been saved. You can now close this page. Thanks again!
+    </exitText>
+    <calibration checkFrequencies="false" checkLevels="false" checkChannels="false"/>
+    <survey location="pre" showBackButton="true">
+      <surveyquestion id="sessionId" mandatory="true" boxsize="normal">
+      <statement>Hi!
+        First, thank you for your time!
+        Before we start, please enter your Prolific ID.
+      </statement>
+      </surveyquestion>
+
+      <surveycheckbox id="environment" name="" mandatory="true" min="0" max="NaN">
+        <statement>We recommend you use headphones for this test and that you find a quiet environment. Is this the case?
+        </statement>
+          <option name="environment_yes_quiet">Yes, I am in a quiet place.
+          </option>
+          <option name="environment_yes_headphones">Yes, I am using headphones.
+          </option>
+          <option name="environment_no">No
+          </option>
+      </surveycheckbox>
+
+      <surveystatement id="intro">
+	      <statement>  In this test, you will evaluate the vocal effort of different audio speech samples by rating them on a scale from 0 (soft) to 100 (very loud). The goal is to assess the perceptual effort of each sample in comparison to four references. 
+        Please read the following instructions carefully before starting:
+
+          1. Listen to the four reference audio samples first. They are identified with a * symbol. Each reference corresponds to a different level of vocal effort (soft, normal, loud, very loud).
+          2. Evaluate the vocal effort of the four references. A low score means that the sound is soft, while a high score means that the sound is very loud.
+          3. Listen to each of the 4 audio samples. They are identified with a # symbol.
+          4. Rate them according to the vocal effort level they correspond to. 
+          5. After rating all the samples, listen to them one last time to ensure you are satisfied with your scores and their ranking (adjust your ratings if needed).
+          6. Once you have finalized your ratings, click the Next blue button to move to the next set of audio samples. Repeat steps 1-6 for each batch.
+
+          The test will take approximately 25min to complete. For the best experience, ensure you are in a quiet environment and using high-quality headphones. Take breaks if needed to avoid fatigue, as it can affect your perception. To access to these instructions during the test, just click on Instructions (top left). 
+
+          ***This test is not compatible with Microsoft Internet Explorer and it must be done on a laptop or desktop computer (not a smartphone or tablet).***
+        </statement>
+      </surveystatement>
+    </survey>
+    
+    <survey location="post" showBackButton="true">
+      <surveystatement id="thankyou">
+        <statement>Thank you for your time! Please click 'Submit' to submit your results and exit the test.
+        The prolific completion code is C18D5P5I 
+        </statement>
+      </surveystatement>
+    </survey>
+
+    <metric>
+      <metricenable>testTimer
+      </metricenable>
+      <metricenable>elementTimer
+      </metricenable>
+      <metricenable>elementInitialPosition
+      </metricenable>
+      <metricenable>elementTracker
+      </metricenable>
+      <metricenable>elementFlagListenedTo
+      </metricenable>
+      <metricenable>elementFlagMoved
+      </metricenable>
+      <metricenable>elementListenTracker
+      </metricenable>
+    </metric>
+
+    <interface>
+      <interfaceoption type="show" name="playhead"/>
+      <interfaceoption type="show" name="page-count"/>
+      <interfaceoption type="check" name="fragmentFullPlayback"/>
+      <interfaceoption type="check" name="fragmentMoved"/>
+    </interface>
+  </setup>
+
+
+<!-- Intra Same Configuration -->
+<page id="eval-intra-same-0" hostURL="media/transformed/" randomiseOrder="false" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+  <interface>
+    <scales>
+      <scalelabel position="12">Soft (0-25) </scalelabel>
+      <scalelabel position="37">Normal (25-50) </scalelabel>
+      <scalelabel position="62">Loud (50-75) </scalelabel>
+      <scalelabel position="87">Very Loud (75-100)</scalelabel>
+    </scales>
+  </interface>
+
+    <!-- Reference Samples (First 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_soft.wav" id="reference-intra-same-001" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm.wav" id="reference-intra-same-004" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_loud.wav" id="reference-intra-same-002" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_very.wav" id="reference-intra-same-003" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+
+    <!-- Test Samples (Next 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_prd_intra_same.wav" id="test-intra-same-001" gain="0" label="#   1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_spk_intra_same.wav" id="test-intra-same-002" gain="0" label="#   2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_enc_intra_same.wav" id="test-intra-same-003" gain="0" label="#     3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_lmb_intra_same.wav" id="test-intra-same-004" gain="0" label="#   4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+</page>
+
+<!-- Inter Same Configuration -->
+<page id="eval-inter-same-0" hostURL="media/transformed/" randomiseOrder="false" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+  <interface>
+    <scales>
+      <scalelabel position="12">Soft (0-25) </scalelabel>
+      <scalelabel position="37">Normal (25-50) </scalelabel>
+      <scalelabel position="62">Loud (50-75) </scalelabel>
+      <scalelabel position="87">Very Loud (75-100)</scalelabel>
+    </scales>
+  </interface>
+
+    <!-- Reference Samples (First 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_soft.wav" id="reference-inter-same-001" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm.wav" id="reference-inter-same-004" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_loud.wav" id="reference-inter-same-002" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_very.wav" id="reference-inter-same-003" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+
+    <!-- Test Samples (Next 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_prd_inter_same.wav" id="test-inter-same-001" gain="0" label="#   1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_spk_inter_same.wav" id="test-inter-same-002" gain="0" label="#   2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_enc_inter_same.wav" id="test-inter-same-003" gain="0" label="#     3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_lmb_inter_same.wav" id="test-inter-same-004" gain="0" label="#   4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+</page>
+
+<!-- Intra diff Configuration -->
+<page id="eval-intra-diff-0" hostURL="media/transformed/" randomiseOrder="false" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+  <interface>
+    <scales>
+      <scalelabel position="12">Soft (0-25) </scalelabel>
+      <scalelabel position="37">Normal (25-50) </scalelabel>
+      <scalelabel position="62">Loud (50-75) </scalelabel>
+      <scalelabel position="87">Very Loud (75-100)</scalelabel>
+    </scales>
+  </interface>
+
+    <!-- Reference Samples (First 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_soft.wav" id="reference-intra-diff-001" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm.wav" id="reference-intra-diff-004" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_loud.wav" id="reference-intra-diff-002" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_very.wav" id="reference-intra-diff-003" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+
+    <!-- Test Samples (Next 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_prd_intra_diff.wav" id="test-intra-diff-001" gain="0" label="#   1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_spk_intra_diff.wav" id="test-intra-diff-002" gain="0" label="#   2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_enc_intra_diff.wav" id="test-intra-diff-003" gain="0" label="#     3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_lmb_intra_diff.wav" id="test-intra-diff-004" gain="0" label="#   4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+</page>
+
+<!-- Inter diff Configuration -->
+<page id="eval-inter-diff-0" hostURL="media/transformed/" randomiseOrder="false" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+  <interface>
+    <scales>
+      <scalelabel position="12">Soft (0-25) </scalelabel>
+      <scalelabel position="37">Normal (25-50) </scalelabel>
+      <scalelabel position="62">Loud (50-75) </scalelabel>
+      <scalelabel position="87">Very Loud (75-100)</scalelabel>
+    </scales>
+  </interface>
+
+    <!-- Reference Samples (First 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_soft.wav" id="reference-inter-diff-001" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm.wav" id="reference-inter-diff-004" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_loud.wav" id="reference-inter-diff-002" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_very.wav" id="reference-inter-diff-003" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+
+    <!-- Test Samples (Next 4 elements) -->
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_prd_inter_diff.wav" id="test-inter-diff-001" gain="0" label="#   1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_spk_inter_diff.wav" id="test-inter-diff-002" gain="0" label="#   2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_token_enc_inter_diff.wav" id="test-inter-diff-003" gain="0" label="#     3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="Avid/sp41/sp41_sen1_norm2very_freevc_lmb_inter_diff.wav" id="test-inter-diff-004" gain="0" label="#   4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+</page>
+
+</waet>
