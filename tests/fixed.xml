@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<waet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test-schema.xsd">
+	<setup crossFade="0" interface="APE" loudness="0" minNumberPlays="1" playOne="true" postSilence="0" preSilence="0" randomiseAxisOrder="false" randomiseOrder="false" returnURL="save.php">
+		<exitText>Thank you for completing my test. This was an evaluation of computational ideas of composition and its different approaches. The data you have provided will be used to evaluate the computational compositions to identify a pathway forwards to use computers to aid in composing for musicians. Please direct any queries to: harriet.drury@students.plymouth.ac.uk</exitText>
+		<calibration checkChannels="false" checkFrequencies="false" checkLevels="true"/>
+		<survey location="pre" showBackButton="true">
+		</survey>
+		<metric>
+			<metricenable>testTimer</metricenable>
+			<metricenable>elementTimer</metricenable>
+			<metricenable>elementTracker</metricenable>
+			<metricenable>elementInitialPosition</metricenable>
+			<metricenable>elementFlagMoved</metricenable>
+			<metricenable>elementListenTracker</metricenable>
+		</metric>
+		<interface>
+			<!-- <interfaceoption name="fragmentPlayed" type="check"/> -->
+			<!-- <interfaceoption name="fragmentMoved" type="check"/> -->
+			<interfaceoption name="volume" type="show"/>
+			<interfaceoption name="playhead" type="show"/>
+			<!-- <interfaceoption name="fragmentFullPlayback" type="check"/> -->
+		</interface>
+	</setup>
+	<page alwaysInclude="false" hostURL="media/Sounds/" id="Melody" label="default" labelStart="" loop="false" minNumberPlays="0" playOne="true" poolSize="0" postSilence="0" preSilence="0" randomiseOrder="true" repeatCount="0" restrictMovement="false" synchronous="false">
+		<commentboxprefix>Comment on track</commentboxprefix>
+		<interface name="coherence">
+			<title>Coherence and Enjoyability</title>
+			<!-- <interfaceoption name="fragmentPlayed" type="check"/> -->
+			<!-- <interfaceoption name="fragmentMoved" type="check"/> -->
+			<interfaceoption name="volume" type="show"/>
+			<interfaceoption name="playhead" type="show"/>
+			<scales>
+				<scalelabel position="10">Dislike Extremeley</scalelabel>
+				<scalelabel position="90">Like Extremely</scalelabel>
+			</scales>
+		</interface>
+		<audioelement alwaysInclude="false" gain="0" id="Bach_Magnificat" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="Bach_Magnificat.wav"/>
+		<audioelement alwaysInclude="false" gain="0" id="DeepBach" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="DeepBach.wav"/>
+		<audioelement alwaysInclude="false" gain="0" id="HRNN" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="HRNN.wav"/>
+		<audioelement alwaysInclude="false" gain="0" id="HRNN_L3" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="HRNN_L3.wav"/>
+		<audioelement alwaysInclude="false" gain="0" id="Lookback_RNN" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="Lookback_RNN.wav"/>
+		<audioelement alwaysInclude="false" gain="0" id="Markov" label="" minNumberPlays="1" postSilence="0" preSilence="0" type="normal" url="Markov.wav"/>
+		<survey location="pre" showBackButton="true"/>
+		<survey location="post" showBackButton="true"/>
+	</page>
+</waet>
