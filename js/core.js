@@ -44,15 +44,14 @@ function qualifyURL(url) {
     return el.firstChild.href;
 }
 
-function insertParam(s, key, value)
-{
+function insertParam(s, key, value) {
     key = encodeURI(key); value = encodeURI(value);
     if (s.split("?").length == 1) {
         s = s + ">";
     } else {
         s = s + "&";
     }
-    return s+key+"="+value;
+    return s + key + "=" + value;
 }
 
 // Firefox does not have an XMLDocument.prototype.getElementsByName
@@ -1309,9 +1308,9 @@ function stateMachine() {
             }
             pagePool.push(page);
         });
-        if (specification.numPages > 0) {
+        if (specification.poolSize > 0) {
             specification.randomiseOrder = true;
-            pagePool = pickSubPool(pagePool, specification.numPages);
+            pagePool = pickSubPool(pagePool, specification.poolSize);
         }
 
         // Now get the order of pages
@@ -2211,7 +2210,7 @@ function sessionMetrics(engine, specification) {
                 break;
         }
     }
-    this.initialiseTest = function () {};
+    this.initialiseTest = function () { };
 }
 
 function metricTracker(caller) {
@@ -2475,7 +2474,7 @@ function Interface(specificationObject) {
     // Interface object MUST have an exportXMLDOM method which returns the various DOM levels
     // For example, APE returns  the slider position normalised in a <value> tag.
     this.interfaceObjects = [];
-    this.interfaceObject = function () {};
+    this.interfaceObject = function () { };
 
     this.resizeWindow = function (event) {
         popup.resize(event);
@@ -3844,7 +3843,7 @@ function Storage() {
         function postUpdate() {
             return new Promise(function (resolve, reject) {
                 // Return a new promise.
-                chainPosition+=1;
+                chainPosition += 1;
                 var hold = document.createElement("div");
                 var clone = parent.root.cloneNode(true);
                 hold.appendChild(clone);
@@ -4243,7 +4242,7 @@ function Storage() {
             'get': function () {
                 return linkedID;
             },
-            'set': function(s) {
+            'set': function (s) {
                 if (typeof s == "string") {
                     linkedID = s;
                     if (this.root) {
