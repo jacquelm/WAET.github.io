@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <waet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test-intra-same-00schema.xsd">
-  <setup interface="MUSHRA" projectReturn="save.php" returnURL="" randomiseOrder="true" poolSize="20" loudness="-26" crossFade="0" randomiseAxisOrder="false" preSilence="0" postSilence="0" playOne="false" minNumberPlays="1">
+  <setup interface="MUSHRA" projectReturn="http://lombardtokenizer.kesug.com/WebAudioEvaluationTool/saves/" returnURL="" randomiseOrder="true" poolSize="20" loudness="-26" crossFade="0" randomiseAxisOrder="false" preSilence="0" postSilence="0" playOne="false" minNumberPlays="1">
     <exitText>
       Your results have been saved. You can now close this page. Thanks again!
     </exitText>
