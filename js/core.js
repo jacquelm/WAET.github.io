@@ -406,8 +406,12 @@ function createProjectSave(destURL) {
     var xmlDoc = storage.finish();
     var parent = document.createElement("div");
     parent.appendChild(xmlDoc);
-    var file = [parent.innerHTML];
-    if (destURL == "local") {
+    var xmlString = parent.innerHTML;
+    var file = [xmlString];
+    var serverSavesEnabled = storage && storage.serverSavesEnabled;
+    var formspreeEndpoint = window.WAET_FORM_ENDPOINT || window.formspreeEndpoint;
+
+    var showDownloadLink = function (message) {
         var bb = new Blob(file, {
             type: 'application/xml'
         });
@@ -419,8 +423,57 @@ function createProjectSave(destURL) {
         a.textContent = "Save File";
 
         popup.showPopup();
-        popup.popupContent.innerHTML = "<span>Please save the file below to give to your test supervisor</span><br>";
+        popup.popupContent.innerHTML = "";
+        if (typeof message === "string" && message.length > 0) {
+            var span = document.createElement("span");
+            span.textContent = message;
+            popup.popupContent.appendChild(span);
+            popup.popupContent.appendChild(document.createElement("br"));
+        }
         popup.popupContent.appendChild(a);
+    };
+
+    if (destURL == "local") {
+        showDownloadLink("Please save the file below to give to your test supervisor");
+        return;
+    } else if (formspreeEndpoint) {
+        popup.showPopup();
+        popup.popupContent.innerHTML = null;
+        popup.popupContent.textContent = "Submitting. Please Wait";
+        if (typeof (popup.hideNextButton) === "function") {
+            popup.hideNextButton();
+        }
+        if (typeof (popup.hidePreviousButton) === "function") {
+            popup.hidePreviousButton();
+        }
+        var formData = new FormData();
+        formData.append("results", xmlString);
+        formData.append("_subject", "WAET submission");
+
+        fetch(formspreeEndpoint, {
+            method: "POST",
+            headers: {
+                "Accept": "application/json"
+            },
+            body: formData
+        }).then(function (res) {
+            if (!res.ok) {
+                throw new Error("Formspree returned " + res.status);
+            }
+            var converter = new showdown.Converter();
+            if (serverSavesEnabled && typeof specification.returnURL == "string" && specification.returnURL.length > 0) {
+                window.location = insertParam(specification.returnURL, "testKey", storage.SessionKey.key);
+            } else {
+                popup.popupContent.innerHTML = converter.makeHtml(specification.exitText);
+            }
+        }).catch(function (err) {
+            console.error("Formspree submit failed", err);
+            showDownloadLink("Automatic submission failed. Please download and send the file below.");
+        });
+        return;
+    } else if (!serverSavesEnabled) {
+        showDownloadLink("Automatic submission not configured. Please save the file below.");
+        return;
     } else {
         var projectReturn = "";
         if (typeof specification.projectReturn == "string") {
@@ -3802,11 +3855,15 @@ function Storage() {
     this.state = 0;
     var linkedID = undefined;
     var pFilenamePrefix = "save";
+    var serverSavesEnabled = !(window.WAET_DISABLE_SERVER || window.WAET_FORM_ENDPOINT || window.formspreeEndpoint);
+    this.serverSavesEnabled = serverSavesEnabled;
 
     this.initialise = function (existingStore) {
         if (existingStore === undefined) {
             // We need to get the sessionKey
-            this.SessionKey.requestKey();
+            if (serverSavesEnabled) {
+                this.SessionKey.requestKey();
+            }
             this.document = document.implementation.createDocument(null, "waetresult", null);
             this.root = this.document.childNodes[0];
             var projectDocument = specification.projectXML;
@@ -4217,7 +4274,9 @@ function Storage() {
         };
     };
     this.update = function () {
-        this.SessionKey.update();
+        if (serverSavesEnabled) {
+            this.SessionKey.update();
+        }
     };
     this.finish = function () {
         this.state = 1;

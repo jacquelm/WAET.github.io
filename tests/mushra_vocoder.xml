@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<waet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test-intra-same-00schema.xsd">
+  <setup interface="MUSHRA" projectReturn="save.php" returnURL="" randomiseOrder="true" poolSize="20" loudness="-26" crossFade="0" randomiseAxisOrder="false" preSilence="0" postSilence="0" playOne="false" minNumberPlays="1">
+    <exitText>
+      Thanks for taking part. Your results have been saved and you can now close the page.
+    </exitText>
+    <calibration checkFrequencies="false" checkLevels="false" checkChannels="false"/>
+
+    <survey location="pre" showBackButton="false">
+      <surveystatement id="intro">
+        <statement>
+          You will rate short vocoder samples on a 0-100 quality scale. The item marked with * is the reference; all others are test items marked with #. Please use headphones in a quiet room and listen to each item at least once before submitting.
+        </statement>
+      </surveystatement>
+    </survey>
+
+    <survey location="post" showBackButton="false">
+      <surveystatement id="thanks">
+        <statement>Thank you for your time!</statement>
+      </surveystatement>
+    </survey>
+
+    <metric>
+      <metricenable>testTimer</metricenable>
+      <metricenable>elementTimer</metricenable>
+      <metricenable>elementInitialPosition</metricenable>
+      <metricenable>elementTracker</metricenable>
+      <metricenable>elementFlagListenedTo</metricenable>
+      <metricenable>elementFlagMoved</metricenable>
+      <metricenable>elementListenTracker</metricenable>
+    </metric>
+
+    <interface>
+      <interfaceoption type="show" name="playhead"/>
+      <interfaceoption type="show" name="page-count"/>
+      <interfaceoption type="check" name="fragmentFullPlayback"/>
+      <interfaceoption type="check" name="fragmentMoved"/>
+    </interface>
+  </setup>
+
+  <page id="vocoder-org" hostURL="media/vocoder/org/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Bad (0)</scalelabel>
+        <scalelabel position="25">Poor (25)</scalelabel>
+        <scalelabel position="50">Fair (50)</scalelabel>
+        <scalelabel position="75">Good (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="32-pp.wav" id="ref-org-32" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="8-pp.wav" id="test-org-8" gain="0" label="# 1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="16-pp.wav" id="test-org-16" gain="0" label="# 2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="24-pp.wav" id="test-org-24" gain="0" label="# 3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="16-speech-constant-noise-medium.wav" id="test-org-16-noise-medium" gain="0" label="# 4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="16-speech-constant-noise-high.wav" id="test-org-16-noise-high" gain="0" label="# 5" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-opus" hostURL="media/vocoder/opus/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="-18" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Bad (0)</scalelabel>
+        <scalelabel position="25">Poor (25)</scalelabel>
+        <scalelabel position="50">Fair (50)</scalelabel>
+        <scalelabel position="75">Good (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="24-pp_opus.wav" id="ref-opus-24" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="6-pp_opus.wav" id="test-opus-6" gain="0" label="# 1" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="8-pp_opus.wav" id="test-opus-8" gain="0" label="# 2" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="9-pp_opus.wav" id="test-opus-9" gain="0" label="# 3" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="12-pp_opus.wav" id="test-opus-12" gain="0" label="# 4" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="16-pp_opus.wav" id="test-opus-16" gain="0" label="# 5" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="12-noise-medium_opus.wav" id="test-opus-noise-medium" gain="0" label="# 6" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="12-noise-high_opus.wav" id="test-opus-noise-high" gain="0" label="# 7" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+</waet>
