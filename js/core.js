@@ -4023,6 +4023,9 @@ function Storage() {
             },
             "update": {
                 "value": function () {
+                    if (!serverSavesEnabled) {
+                        return;
+                    }
                     if (requestChains === undefined) {
                         throw ("Initiate key exchange first");
                     }
@@ -4033,6 +4036,9 @@ function Storage() {
             },
             "finish": {
                 "value": function () {
+                    if (!serverSavesEnabled) {
+                        return Promise.resolve(true);
+                    }
                     if (this.key === null || requestChains === undefined) {
                         throw ("Cannot save as key == null");
                     }
