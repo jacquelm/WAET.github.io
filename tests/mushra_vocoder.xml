@@ -6,10 +6,40 @@
     </exitText>
     <calibration checkFrequencies="false" checkLevels="false" checkChannels="false"/>
 
-    <survey location="pre" showBackButton="false">
+   <survey location="pre" showBackButton="true">
+      <surveyquestion id="sessionId" mandatory="true" boxsize="normal">
+      <statement>Hi!
+        First, thank you for your time!
+        Before we start, please enter your name.
+      </statement>
+      </surveyquestion>
+
+      <surveycheckbox id="environment" name="" mandatory="true" min="0" max="NaN">
+        <statement>We recommend you use headphones for this test and that you find a quiet environment. Is this the case?
+        </statement>
+          <option name="environment_yes_quiet">Yes, I am in a quiet place.
+          </option>
+          <option name="environment_yes_headphones">Yes, I am using headphones.
+          </option>
+          <option name="environment_no">No
+          </option>
+      </surveycheckbox>
+
       <surveystatement id="intro">
-        <statement>
-          You will rate short vocoder samples on a 0-100 quality scale. The item marked with * is the reference; all others are test items marked with #. Please use headphones in a quiet room and listen to each item at least once before submitting.
+	      <statement>  In this test, you will evaluate the quality of different audio speech samples by rating them on a scale from 0 (bad) to 100 (excellent). The goal is to assess the perceptual quality of each sample in comparison to one reference.
+
+        Please read the following instructions carefully before starting:
+
+          1. Listen to the reference audio sample first. It is identified with a # symbol.
+          2. Evaluate the quality of the reference.
+          3. Listen to each of the 6 audio samples. They are identified with a # symbol.
+          4. Rate them according to the quality level they correspond to. 
+          5. After rating all the samples, listen to them one last time to ensure you are satisfied with your scores and their ranking (adjust your ratings if needed).
+          6. Once you have finalized your ratings, click the Next blue button to move to the next set of audio samples. Repeat steps 1-6 for each batch.
+
+          The test will take approximately 10min to complete. For the best experience, ensure you are in a quiet environment and using high-quality headphones. Take breaks if needed to avoid fatigue, as it can affect your perception. 
+
+          ***This test is not compatible with Microsoft Internet Explorer and it must be done on a laptop or desktop computer (not a smartphone or tablet).***
         </statement>
       </surveystatement>
     </survey>
