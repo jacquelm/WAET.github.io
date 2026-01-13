@@ -28,7 +28,7 @@ function loadInterface() {
     if (titleAttr !== undefined) {
         titleSpan.textContent = titleAttr;
     } else {
-        titleSpan.textContent = 'Listening test';
+        titleSpan.textContent = 'Test MUSHRA';
     }
     // Insert the titleSpan element into the title div element.
     title.appendChild(titleSpan);
@@ -149,8 +149,8 @@ function loadTest(audioHolderObject) {
     }
 
     if (interfaceObj.image !== undefined || audioHolderObject.audioElements.some(function (elem) {
-            return elem.image !== undefined;
-        })) {
+        return elem.image !== undefined;
+    })) {
         document.getElementById("testContent").insertBefore(interfaceContext.imageHolder.root, document.getElementById("slider"));
         interfaceContext.imageHolder.setImage(interfaceObj.image);
     }

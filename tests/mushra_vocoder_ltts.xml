@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<waet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test-intra-same-00schema.xsd">
+  <setup interface="MUSHRA" projectReturn="save.php" returnURL="" randomiseOrder="true" poolSize="20" loudness="-20" crossFade="0" randomiseAxisOrder="false" preSilence="0" postSilence="0" playOne="false" minNumberPlays="1">
+    <exitText>
+      Merci d'avoir particip&#x00E9;.&#xA; Vos r&#x00E9;sultats ont &#x00E9;t&#x00E9; enregistr&#x00E9;s et vous pouvez maintenant fermer la page.
+    </exitText>
+    <calibration checkFrequencies="false" checkLevels="false" checkChannels="false"/>
+
+   <survey location="pre" showBackButton="true">
+      <surveyquestion id="sessionId" mandatory="true" boxsize="normal">
+      <statement>
+        Bonjour ! &#xA;
+        Tout d'abord, merci de nous accorder un peu de votre temps ! &#xA;
+        Avant de commencer, veuillez saisir votre identifiant VOGO (exemple : MJN pour Maxime Jacquelin).
+      </statement>
+      </surveyquestion>
+
+      <surveycheckbox id="environment_quiet" name="" mandatory="true" min="0" max="NaN">
+        <statement> 
+          Avant de passer le test, nous vous recommandons de vous installer dans un environnement calme. Est-ce le cas ?
+        </statement>
+          <option name="environment_quiet_yes">Oui, je suis dans un endroit calme.
+          </option>
+          <option name="environment_quiet_no">Non.
+          </option>
+      </surveycheckbox>
+
+      <surveycheckbox id="environment_headphones" name="" mandatory="true" min="0" max="NaN">
+        <statement>Nous vous recommandons &#x00E9;galement d'utiliser des &#x00E9;couteurs pour ce test. Est-ce le cas ?
+        </statement>
+          <option name="environment_headphones_wired_yes">Oui, j'utilise des &#x00E9;couteurs filaires.
+          </option>
+          <option name="environment_headphones_wireless_yes">Oui, j'utilise des &#x00E9;couteurs sans fil.
+          </option>
+          <option name="environment_headphones_no">Non.
+          </option>
+      </surveycheckbox>
+
+      <surveystatement id="intro_1">
+	      <statement>  
+          Dans ce test, vous &#x00E9;valuerez la qualit&#x00E9; de diff&#x00E9;rents &#x00E9;chantillons audio en les notant sur une &#x00E9;chelle de 0 (mauvais) &#x00E0; 100 (excellent). ***L'objectif est d'&#x00E9;valuer la qualit&#x00E9; per&#x00E7;ue de chaque &#x00E9;chantillon par rapport &#x00E0; une r&#x00E9;f&#x00E9;rence.***
+
+        </statement>
+      </surveystatement>
+
+      <surveystatement id="intro_2">
+	      <statement> 
+          Veuillez lire attentivement les instructions suivantes avant de commencer : &#xA;
+
+          1. &#x00C9;coutez d'abord l'&#x00E9;chantillon audio de r&#x00E9;f&#x00E9;rence. Il est identifi&#x00E9; par le symbole *.
+          2. &#x00C9;valuez la qualit&#x00E9; de la r&#x00E9;f&#x00E9;rence.
+          3. &#x00C9;coutez les &#x00E9;chantillons audio.
+          4. Notez-les en fonction du niveau de qualit&#x00E9; par rapport &#x00E0; la r&#x00E9;f&#x00E9;rence. 
+          5. Apr&#x00E8;s avoir not&#x00E9; tous les &#x00E9;chantillons, &#x00E9;coutez-les une derni&#x00E8;re fois pour vous assurer que vous &#x00EA;tes satisfait de vos notes et de leur classement (ajustez vos notes si n&#x00E9;cessaire).
+          6. Une fois vos notes finalis&#x00E9;es, cliquez sur le bouton bleu Suivant pour passer &#x00E0; la s&#x00E9;rie d'&#x00E9;chantillons audio suivante. R&#x00E9;p&#x00E9;tez les &#x00E9;tapes 1 &#x00E0; 6 pour chaque lot.
+        </statement>
+      </surveystatement>
+
+      <surveystatement id="intro_3">
+	      <statement>  
+          Dans ce test, vous &#x00E9;valuerez la qualit&#x00E9; de diff&#x00E9;rents &#x00E9;chantillons Le test dure environ 10 minutes. Pour une exp&#x00E9;rience optimale, assurez-vous d'&#x00EA;tre dans un environnement calme et d'utiliser des &#x00E9;couteurs de bonne qualit&#x00E9;. Faites des pauses si n&#x00E9;cessaire pour &#x00E9;viter la fatigue, car celle-ci peut affecter votre perception. &#xA;
+
+          ***Ce test n'est pas compatible avec Microsoft Internet Explorer ou Edge et doit &#x00EA;tre effectu&#x00E9; sur un ordinateur de bureau ou portable (et non sur un smartphone ou une tablette).***
+
+        </statement>
+      </surveystatement>
+      <surveystatement id="intro_4">
+	      <statement>  
+          Nous allons commencer par un premier exemple d'un test MUSHRA. Profitez en pour vous familiarisez avec l'&#x00E9;chelle et pour ajuster votre volume audio. 
+        </statement>
+      </surveystatement>
+    </survey>
+
+    <survey location="post" showBackButton="false">
+      <surveystatement id="thanks">
+        <statement>Merci d'avoir particip&#x00E9;. Vous pouvez soumettre votre &#x00E9;valuation en cliquant sur le boutons ci-dessous.</statement>
+      </surveystatement>
+    </survey>
+
+    <metric>
+      <metricenable>testTimer</metricenable>
+      <metricenable>elementTimer</metricenable>
+      <metricenable>elementInitialPosition</metricenable>
+      <metricenable>elementTracker</metricenable>
+      <metricenable>elementFlagListenedTo</metricenable>
+      <metricenable>elementFlagMoved</metricenable>
+      <metricenable>elementListenTracker</metricenable>
+    </metric>
+
+    <interface>
+      <interfaceoption type="show" name="playhead"/>
+      <interfaceoption type="show" name="page-count"/>
+      <interfaceoption type="check" name="fragmentFullPlayback"/>
+      <interfaceoption type="check" name="fragmentMoved"/>
+    </interface>
+  </setup>
+
+  <page id="vocoder-ltts-train" hostURL="media/vocoder/ltts/" randomiseOrder="false" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" position="0" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/1284_1180_000008_000001.wav" id="org_swb_1284_1180_000008_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/wb/1284_1180_000008_000001.wav" id="org_wb_1284_1180_000008_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/1284_1180_000008_000001.wav" id="org_nb_1284_1180_000008_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/mb/1284_1180_000008_000001.wav" id="org_mb_1284_1180_000008_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/1284_1180_000008_000001.wav" id="org_swb_1284_1180_000008_000001_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_min/1284_1180_000008_000001.wav" id="codec2_nb_min_1284_1180_000008_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_min/1284_1180_000008_000001.wav" id="g729_nb_min_1284_1180_000008_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <survey location="after">
+      <surveyentry type="statement" id="ltts-train-complete">
+        <statement>Merci, vous venez de terminer la page d'entra&#x00EE;nement. Cliquez sur Submit pour passer &#x00E0; la suite du test.</statement>
+      </surveyentry>
+    </survey>
+  </page>
+
+  <page id="vocoder-ltts-mb-vs-wb1" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/wb/3570_5695_000009_000004.wav" id="org_wb_3570_5695_000009_000004_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/wb/3570_5695_000009_000004.wav" id="org_wb_3570_5695_000009_000004_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_high/3570_5695_000009_000004.wav" id="opus_wb_high_3570_5695_000009_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_high/3570_5695_000009_000004.wav" id="opus_mb_high_3570_5695_000009_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/mb/3570_5695_000009_000004.wav" id="org_mb_3570_5695_000009_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_low/3570_5695_000009_000004.wav" id="opus_wb_low_3570_5695_000009_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_low/3570_5695_000009_000004.wav" id="opus_mb_low_3570_5695_000009_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-mb-vs-wb2" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/wb/7176_88083_000006_000003.wav" id="org_wb_7176_88083_000006_000003_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_low/7176_88083_000006_000003.wav" id="opus_mb_low_7176_88083_000006_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/mb/7176_88083_000006_000003.wav" id="org_mb_7176_88083_000006_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_low/7176_88083_000006_000003.wav" id="opus_wb_low_7176_88083_000006_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/> 
+    <audioelement url="opus/wb_high/7176_88083_000006_000003.wav" id="opus_wb_high_7176_88083_000006_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_high/7176_88083_000006_000003.wav" id="opus_mb_high_7176_88083_000006_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/wb/7176_88083_000006_000003.wav" id="org_wb_7176_88083_000006_000003_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-nb-vs-mb1" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/mb/8555_284447_000033_000003.wav" id="org_mb_8555_284447_000033_000003_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_low/8555_284447_000033_000003.wav" id="opus_mb_low_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_low/8555_284447_000033_000003.wav" id="opus_nb_low_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_high/8555_284447_000033_000003.wav" id="opus_mb_high_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_high/8555_284447_000033_000003.wav" id="opus_nb_high_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/mb/8555_284447_000033_000003.wav" id="org_mb_8555_284447_000033_000003_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/8555_284447_000033_000003.wav" id="org_nb_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-nb-vs-mb2" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/mb/237_134500_000001_000004.wav" id="org_mb_237_134500_000001_000004_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_low/237_134500_000001_000004.wav" id="opus_mb_low_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/237_134500_000001_000004.wav" id="org_nb_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_high/237_134500_000001_000004.wav" id="opus_nb_high_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/mb/237_134500_000001_000004.wav" id="org_mb_237_134500_000001_000004_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_low/237_134500_000001_000004.wav" id="opus_nb_low_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/mb_high/237_134500_000001_000004.wav" id="opus_mb_high_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    
+  </page>
+
+  <page id="vocoder-ltts-wb-vs-swb1" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/1089_134686_000030_000000.wav" id="org_swb_1089_134686_000030_000000_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_high/1089_134686_000030_000000.wav" id="opus_wb_high_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/1089_134686_000030_000000.wav" id="org_swb_1089_134686_000030_000000_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_high/1089_134686_000030_000000.wav" id="opus_swb_high_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/wb/1089_134686_000030_000000.wav" id="org_wb_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_low/1089_134686_000030_000000.wav" id="opus_wb_low_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_low/1089_134686_000030_000000.wav" id="opus_swb_low_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-wb-vs-swb2" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/1284_1180_000053_000001.wav" id="org_swb_1284_1180_000053_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_low/1284_1180_000053_000001.wav" id="opus_wb_low_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_low/1284_1180_000053_000001.wav" id="opus_swb_low_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_high/1284_1180_000053_000001.wav" id="opus_swb_high_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/wb/1284_1180_000053_000001.wav" id="org_wb_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/wb_high/1284_1180_000053_000001.wav" id="opus_wb_high_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/1284_1180_000053_000001.wav" id="org_swb_1284_1180_000053_000001_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-nball1" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/nb/2830_3980_000018_000000.wav" id="org_nb_2830_3980_000018_000000_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_low/2830_3980_000018_000000.wav" id="opus_nb_low_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_low/2830_3980_000018_000000.wav" id="g729_nb_low_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_min/2830_3980_000018_000000.wav" id="opus_nb_min_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/2830_3980_000018_000000.wav" id="org_nb_2830_3980_000018_000000_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_high/2830_3980_000018_000000.wav" id="g729_nb_high_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_min/2830_3980_000018_000000.wav" id="codec2_nb_min_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_high/2830_3980_000018_000000.wav" id="codec2_nb_high_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_high/2830_3980_000018_000000.wav" id="opus_nb_high_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_min/2830_3980_000018_000000.wav" id="g729_nb_min_2830_3980_000018_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-nball2" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/nb/5683_32879_000046_000002.wav" id="org_nb_5683_32879_000046_000002_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_low/5683_32879_000046_000002.wav" id="opus_nb_low_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_low/5683_32879_000046_000002.wav" id="g729_nb_low_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_high/5683_32879_000046_000002.wav" id="opus_nb_high_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/5683_32879_000046_000002.wav" id="org_nb_5683_32879_000046_000002_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_min/5683_32879_000046_000002.wav" id="g729_nb_min_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_high/5683_32879_000046_000002.wav" id="codec2_nb_high_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_min/5683_32879_000046_000002.wav" id="codec2_nb_min_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_high/5683_32879_000046_000002.wav" id="g729_nb_high_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_min/5683_32879_000046_000002.wav" id="opus_nb_min_5683_32879_000046_000002_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-nball3" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/nb/8555_284447_000033_000003.wav" id="org_nb_8555_284447_000033_000003_wav_2" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_low/8555_284447_000033_000003.wav" id="opus_nb_low_8555_284447_000033_000003_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_high/8555_284447_000033_000003.wav" id="opus_nb_high_8555_284447_000033_000003_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_low/8555_284447_000033_000003.wav" id="g729_nb_low_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/nb/8555_284447_000033_000003.wav" id="org_nb_8555_284447_000033_000003_wav_3" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_min/8555_284447_000033_000003.wav" id="codec2_nb_min_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/nb_min/8555_284447_000033_000003.wav" id="opus_nb_min_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="codec2/nb_high/8555_284447_000033_000003.wav" id="codec2_nb_high_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_high/8555_284447_000033_000003.wav" id="g729_nb_high_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="g729/nb_min/8555_284447_000033_000003.wav" id="g729_nb_min_8555_284447_000033_000003_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-swball1" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/8230_279154_000019_000000.wav" id="org_swb_8230_279154_000019_000000_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="flac/swb/8230_279154_000019_000000.wav" id="flac_swb_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="adpcm/swb/8230_279154_000019_000000.wav" id="adpcm_swb_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_high/8230_279154_000019_000000.wav" id="opus_swb_high_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/8230_279154_000019_000000.wav" id="org_swb_8230_279154_000019_000000_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_low/8230_279154_000019_000000.wav" id="opus_swb_low_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+  
+  <page id="vocoder-ltts-swball2" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/8455_210777_000014_000001.wav" id="org_swb_8455_210777_000014_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_high/8455_210777_000014_000001.wav" id="opus_swb_high_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/8455_210777_000014_000001.wav" id="org_swb_8455_210777_000014_000001_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_low/8455_210777_000014_000001.wav" id="opus_swb_low_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="flac/swb/8455_210777_000014_000001.wav" id="flac_swb_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="adpcm/swb/8455_210777_000014_000001.wav" id="adpcm_swb_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+
+  <page id="vocoder-ltts-swball3" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
+    <interface>
+      <scales>
+        <scalelabel position="0">Mauvais (0)</scalelabel>
+        <scalelabel position="25">Faible (25)</scalelabel>
+        <scalelabel position="50">Moyen (50)</scalelabel>
+        <scalelabel position="75">Bon (75)</scalelabel>
+        <scalelabel position="100">Excellent (100)</scalelabel>
+      </scales>
+    </interface>
+
+    <audioelement url="org/swb/8463_287645_000022_000001.wav" id="org_swb_8463_287645_000022_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="flac/swb/8463_287645_000022_000001.wav" id="flac_swb_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_low/8463_287645_000022_000001.wav" id="opus_swb_low_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="opus/swb_high/8463_287645_000022_000001.wav" id="opus_swb_high_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="adpcm/swb/8463_287645_000022_000001.wav" id="adpcm_swb_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/swb/8463_287645_000022_000001.wav" id="org_swb_8463_287645_000022_000001_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+  </page>
+</waet>
