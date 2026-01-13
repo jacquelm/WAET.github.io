@@ -107,7 +107,7 @@
     <audioelement url="org/mb/ASVEL-TX-1stHALF-002_seg04.wav" id="org_mb_ASVEL-TX-1stHALF-002_seg04_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="g729/nb_min/ASVEL-TX-1stHALF-002_seg04.wav" id="g729_nb_min_ASVEL-TX-1stHALF-002_seg04_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/ASVEL-TX-1stHALF-002_seg04.wav" id="org_swb_ASVEL-TX-1stHALF-002_seg04_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg04.wav" id="org_min_ASVEL-TX-1stHALF-002_seg04_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg04.wav" id="org_min_ASVEL-TX-1stHALF-002_seg04_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="codec2/nb_min/ASVEL-TX-1stHALF-002_seg04.wav" id="codec2_nb_min_ASVEL-TX-1stHALF-002_seg04_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <survey location="after">
       <surveyentry type="statement" id="rec-train-complete">
@@ -131,7 +131,7 @@
     <audioelement url="org/wb/Croatie-TX-1stHALF-001_seg47.wav" id="org_wb_Croatie-TX-1stHALF-001_seg47_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_high/Croatie-TX-1stHALF-001_seg47.wav" id="opus_wb_high_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_high/Croatie-TX-1stHALF-001_seg47.wav" id="opus_mb_high_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg47.wav" id="org_min_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg47.wav" id="org_min_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/mb/Croatie-TX-1stHALF-001_seg47.wav" id="org_mb_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_low/Croatie-TX-1stHALF-001_seg47.wav" id="opus_wb_low_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_low/Croatie-TX-1stHALF-001_seg47.wav" id="opus_mb_low_Croatie-TX-1stHALF-001_seg47_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
@@ -153,7 +153,7 @@
     <audioelement url="org/mb/ASVEL-TX-1stHALF-002_seg30.wav" id="org_mb_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_low/ASVEL-TX-1stHALF-002_seg30.wav" id="opus_wb_low_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/> 
     <audioelement url="opus/wb_high/ASVEL-TX-1stHALF-002_seg30.wav" id="opus_wb_high_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg30.wav" id="org_min_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg30.wav" id="org_min_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_high/ASVEL-TX-1stHALF-002_seg30.wav" id="opus_mb_high_ASVEL-TX-1stHALF-002_seg30_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/wb/ASVEL-TX-1stHALF-002_seg30.wav" id="org_wb_ASVEL-TX-1stHALF-002_seg30_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
@@ -170,7 +170,7 @@
     </interface>
 
     <audioelement url="org/mb/ASVEL-TX-1stHALF-003_seg66.wav" id="org_mb_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/ASVEL-TX-1stHALF-003_seg66.wav" id="org_min_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/ASVEL-TX-1stHALF-003_seg66.wav" id="org_min_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_low/ASVEL-TX-1stHALF-003_seg66.wav" id="opus_mb_low_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/nb_low/ASVEL-TX-1stHALF-003_seg66.wav" id="opus_nb_low_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_high/ASVEL-TX-1stHALF-003_seg66.wav" id="opus_mb_high_ASVEL-TX-1stHALF-003_seg66_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
@@ -197,7 +197,7 @@
     <audioelement url="org/mb/Croatie-TX-1stHALF-001_seg49.wav" id="org_mb_Croatie-TX-1stHALF-001_seg49_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/nb_low/Croatie-TX-1stHALF-001_seg49.wav" id="opus_nb_low_Croatie-TX-1stHALF-001_seg49_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_high/Croatie-TX-1stHALF-001_seg49.wav" id="opus_mb_high_Croatie-TX-1stHALF-001_seg49_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg49.wav" id="org_min_Croatie-TX-1stHALF-001_seg49_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg49.wav" id="org_min_Croatie-TX-1stHALF-001_seg49_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     
   </page>
 
@@ -218,7 +218,7 @@
     <audioelement url="opus/swb_high/Croatie-TX-1stHALF-001_seg183.wav" id="opus_swb_high_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/wb/Croatie-TX-1stHALF-001_seg183.wav" id="org_wb_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_low/Croatie-TX-1stHALF-001_seg183.wav" id="opus_wb_low_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg183.wav" id="org_min_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg183.wav" id="org_min_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/Croatie-TX-1stHALF-001_seg183.wav" id="opus_swb_low_Croatie-TX-1stHALF-001_seg183_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
 
@@ -237,7 +237,7 @@
     <audioelement url="opus/wb_low/ASVEL-TX-1stHALF-002_seg32.wav" id="opus_wb_low_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/ASVEL-TX-1stHALF-002_seg32.wav" id="opus_swb_low_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/ASVEL-TX-1stHALF-002_seg32.wav" id="opus_swb_high_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg32.wav" id="org_min_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/ASVEL-TX-1stHALF-002_seg32.wav" id="org_min_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/wb/ASVEL-TX-1stHALF-002_seg32.wav" id="org_wb_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_high/ASVEL-TX-1stHALF-002_seg32.wav" id="opus_wb_high_ASVEL-TX-1stHALF-002_seg32_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/ASVEL-TX-1stHALF-002_seg32.wav" id="org_swb_ASVEL-TX-1stHALF-002_seg32_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
@@ -328,7 +328,7 @@
     <audioelement url="adpcm/swb/Croatie-TX-1stHALF-001_seg206.wav" id="adpcm_swb_Croatie-TX-1stHALF-001_seg206_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/Croatie-TX-1stHALF-001_seg206.wav" id="opus_swb_high_Croatie-TX-1stHALF-001_seg206_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/Croatie-TX-1stHALF-001_seg206.wav" id="org_swb_Croatie-TX-1stHALF-001_seg206_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg206.wav" id="org_min_Croatie-TX-1stHALF-001_seg206_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/Croatie-TX-1stHALF-001_seg206.wav" id="org_min_Croatie-TX-1stHALF-001_seg206_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/Croatie-TX-1stHALF-001_seg206.wav" id="opus_swb_low_Croatie-TX-1stHALF-001_seg206_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
   
@@ -348,7 +348,7 @@
     <audioelement url="org/swb/ASVEL-TX-2ndHALF-003_seg13.wav" id="org_swb_ASVEL-TX-2ndHALF-003_seg13_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/ASVEL-TX-2ndHALF-003_seg13.wav" id="opus_swb_low_ASVEL-TX-2ndHALF-003_seg13_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="flac/swb/ASVEL-TX-2ndHALF-003_seg13.wav" id="flac_swb_ASVEL-TX-2ndHALF-003_seg13_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/ASVEL-TX-2ndHALF-003_seg13.wav" id="org_min_ASVEL-TX-2ndHALF-003_seg13_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/ASVEL-TX-2ndHALF-003_seg13.wav" id="org_min_ASVEL-TX-2ndHALF-003_seg13_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="adpcm/swb/ASVEL-TX-2ndHALF-003_seg13.wav" id="adpcm_swb_ASVEL-TX-2ndHALF-003_seg13_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
 
@@ -367,7 +367,7 @@
     <audioelement url="flac/swb/Croatie-TX-2ndHALF-001_seg214.wav" id="flac_swb_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/Croatie-TX-2ndHALF-001_seg214.wav" id="opus_swb_low_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/Croatie-TX-2ndHALF-001_seg214.wav" id="opus_swb_high_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/Croatie-TX-2ndHALF-001_seg214.wav" id="org_min_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/Croatie-TX-2ndHALF-001_seg214.wav" id="org_min_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="adpcm/swb/Croatie-TX-2ndHALF-001_seg214.wav" id="adpcm_swb_Croatie-TX-2ndHALF-001_seg214_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/Croatie-TX-2ndHALF-001_seg214.wav" id="org_swb_Croatie-TX-2ndHALF-001_seg214_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>

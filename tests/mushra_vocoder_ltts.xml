@@ -201,7 +201,7 @@
     <audioelement url="opus/nb_high/237_134500_000001_000004.wav" id="opus_nb_high_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/mb/237_134500_000001_000004.wav" id="org_mb_237_134500_000001_000004_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/nb_low/237_134500_000001_000004.wav" id="opus_nb_low_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/237_134500_000001_000004.wav" id="org_min_237_134500_000001_000004_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/237_134500_000001_000004.wav" id="org_min_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/mb_high/237_134500_000001_000004.wav" id="opus_mb_high_237_134500_000001_000004_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     
   </page>
@@ -221,7 +221,7 @@
     <audioelement url="opus/wb_high/1089_134686_000030_000000.wav" id="opus_wb_high_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/1089_134686_000030_000000.wav" id="org_swb_1089_134686_000030_000000_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/1089_134686_000030_000000.wav" id="opus_swb_high_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/1089_134686_000030_000000.wav" id="org_min_1089_134686_000030_000000_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/1089_134686_000030_000000.wav" id="org_min_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/wb/1089_134686_000030_000000.wav" id="org_wb_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_low/1089_134686_000030_000000.wav" id="opus_wb_low_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/1089_134686_000030_000000.wav" id="opus_swb_low_1089_134686_000030_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
@@ -243,7 +243,7 @@
     <audioelement url="opus/swb_low/1284_1180_000053_000001.wav" id="opus_swb_low_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/1284_1180_000053_000001.wav" id="opus_swb_high_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/wb/1284_1180_000053_000001.wav" id="org_wb_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/1284_1180_000053_000001.wav" id="org_min_1284_1180_000053_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/1284_1180_000053_000001.wav" id="org_min_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/wb_high/1284_1180_000053_000001.wav" id="opus_wb_high_1284_1180_000053_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/1284_1180_000053_000001.wav" id="org_swb_1284_1180_000053_000001_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
@@ -332,7 +332,7 @@
     <audioelement url="flac/swb/8230_279154_000019_000000.wav" id="flac_swb_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="adpcm/swb/8230_279154_000019_000000.wav" id="adpcm_swb_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/8230_279154_000019_000000.wav" id="opus_swb_high_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/8230_279154_000019_000000.wav" id="org_min_8230_279154_000019_000000_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/8230_279154_000019_000000.wav" id="org_min_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="org/swb/8230_279154_000019_000000.wav" id="org_swb_8230_279154_000019_000000_wav_2" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/8230_279154_000019_000000.wav" id="opus_swb_low_8230_279154_000019_000000_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
@@ -354,7 +354,7 @@
     <audioelement url="opus/swb_low/8455_210777_000014_000001.wav" id="opus_swb_low_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="flac/swb/8455_210777_000014_000001.wav" id="flac_swb_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="adpcm/swb/8455_210777_000014_000001.wav" id="adpcm_swb_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/8455_210777_000014_000001.wav" id="org_min_8455_210777_000014_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/8455_210777_000014_000001.wav" id="org_min_8455_210777_000014_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
   </page>
 
   <page id="vocoder-ltts-swball3" hostURL="media/vocoder/ltts/" randomiseOrder="true" repeatCount="0" loop="false" synchronous="false" loudness="0" label="default" labelStart="" poolSize="0" alwaysInclude="false" preSilence="0" postSilence="0" playOne="false" restrictMovement="false" minNumberPlays="0">
@@ -369,7 +369,7 @@
     </interface>
 
     <audioelement url="org/swb/8463_287645_000022_000001.wav" id="org_swb_8463_287645_000022_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
-    <audioelement url="org/min/8463_287645_000022_000001.wav" id="org_min_8463_287645_000022_000001_wav" gain="0" label="* Reference" type="reference" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
+    <audioelement url="org/min/8463_287645_000022_000001.wav" id="org_min_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="flac/swb/8463_287645_000022_000001.wav" id="flac_swb_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_low/8463_287645_000022_000001.wav" id="opus_swb_low_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
     <audioelement url="opus/swb_high/8463_287645_000022_000001.wav" id="opus_swb_high_8463_287645_000022_000001_wav" gain="0" label="" type="normal" alwaysInclude="false" preSilence="0" postSilence="0" minNumberPlays="1"/>
